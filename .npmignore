@@ -1,0 +1,18 @@
+# Исключаем файлы и папки, которые не должны попадать в npm-пакет
+coverage
+test
+.github
+.vscode
+.idea
+.DS_Store
+.env*
+*.log
+tsconfig.test.json
+vitest.config.ts
+.size-limit.js
+.versionrc.json
+pnpm-workspace.yaml
+
+# Исходные файлы TypeScript (оставляем только скомпилированные)
+# Но сохраняем типы
+*.tsbuildinfo

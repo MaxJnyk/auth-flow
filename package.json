@@ -1,0 +1,171 @@
+{
+  "name": "auth-flow",
+  "version": "0.1.10",
+  "description": "Comprehensive authentication library for React applications",
+  "author": "Maksim Janykovich <badman7755995@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://lgd.cx/common/frontend/auth-flow"
+  },
+  "publishConfig": {
+    "registry": "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
+  },
+  "keywords": [
+    "authentication",
+    "auth",
+    "react",
+    "telegram",
+    "oauth",
+    "login",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./testing": {
+      "require": "./dist/testing.js",
+      "import": "./dist/testing.mjs",
+      "types": "./dist/testing.d.ts"
+    },
+    "./core": {
+      "require": "./dist/core.js",
+      "import": "./dist/core.mjs",
+      "types": "./dist/core.d.ts"
+    },
+    "./fingerprint": {
+      "require": "./dist/fingerprint.js",
+      "import": "./dist/fingerprint.mjs",
+      "types": "./dist/fingerprint.d.ts"
+    },
+    "./adapters/react": {
+      "require": "./dist/adapters/react.js",
+      "import": "./dist/adapters/react.mjs",
+      "types": "./dist/adapters/react.d.ts"
+    },
+    "./adapters/react/hooks": {
+      "require": "./dist/adapters/react-hooks.js",
+      "import": "./dist/adapters/react-hooks.mjs",
+      "types": "./dist/adapters/react-hooks.d.ts"
+    },
+    "./adapters/react/providers": {
+      "require": "./dist/adapters/react-providers.js",
+      "import": "./dist/adapters/react-providers.mjs",
+      "types": "./dist/adapters/react-providers.d.ts"
+    },
+    "./adapters/react/lazy": {
+      "require": "./dist/adapters/react-lazy.js",
+      "import": "./dist/adapters/react-lazy.mjs",
+      "types": "./dist/adapters/react-lazy.d.ts"
+    },
+    "./adapters/telegram": {
+      "require": "./dist/adapters/telegram.js",
+      "import": "./dist/adapters/telegram.mjs",
+      "types": "./dist/adapters/telegram.d.ts"
+    },
+    "./infrastructure/http": {
+      "require": "./dist/infrastructure/http.js",
+      "import": "./dist/infrastructure/http.mjs",
+      "types": "./dist/infrastructure/http.d.ts"
+    },
+    "./infrastructure/storage": {
+      "require": "./dist/infrastructure/storage.js",
+      "import": "./dist/infrastructure/storage.mjs",
+      "types": "./dist/infrastructure/storage.d.ts"
+    },
+    "./utils": {
+      "require": "./dist/utils.js",
+      "import": "./dist/utils.mjs",
+      "types": "./dist/utils.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "build:analyze": "ANALYZE=true tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 cy:run",
+    "test:e2e:open": "start-server-and-test dev http://localhost:3000 cy:open",
+    "test:e2e:ci": "cypress run --config-file cypress.config.ts --reporter junit",
+    "test:e2e:ci:run": "start-server-and-test dev http://localhost:3000 test:e2e:ci",
+    "test:all": "pnpm run test && pnpm run test:e2e",
+    "lint": "eslint --ext .ts,.tsx src/ test/ cypress/",
+    "lint:fix": "eslint --fix --ext .ts,.tsx src/ test/ cypress/",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'",
+    "format:test": "prettier --write 'test/**/*.{ts,tsx,js,jsx}' 'cypress/**/*.{ts,tsx,js,jsx}'",
+    "format:config": "prettier --write 'vitest.config.ts' 'tsup.config.ts' 'cypress.config.ts' '.eslintrc.js' '.prettierrc.js'",
+    "format:all": "prettier --write '**/*.{ts,tsx,js,jsx,json,md}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint-staged": "lint-staged",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "release": "pnpm run lint && pnpm run format:check && pnpm run test && pnpm run test:e2e && pnpm run build && pnpm publish",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:first": "standard-version --first-release"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "3.4.2",
+    "axios": "^1.6.0",
+    "cookies-next": "^2.1.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "@size-limit/webpack": "^11.2.0",
+    "size-limit": "^11.1.4",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/cypress": "^1.1.6",
+    "@types/node": "^24.3.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "cypress": "^13.17.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-cypress": "^2.15.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.1.7",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^16.1.6",
+    "msw": "^1.3.0",
+    "prettier": "^3.6.2",
+    "standard-version": "^9.5.0",
+    "start-server-and-test": "^2.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.0",
+    "vitest": "^3.2.4"
+  }
+}

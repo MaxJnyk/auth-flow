@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="434" failures="0" errors="0" time="0.8004948334">
+    <testsuite name="test/config/auth-config.test.ts" timestamp="2025-09-05T16:59:04.946Z" hostname="MacBook-Pro-Maksim.local" tests="12" failures="0" errors="0" skipped="0" time="0.003826667">
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; defaultApiConfig &gt; должен содержать правильные значения по умолчанию" time="0.000979417">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; defaultTokenStorageConfig &gt; должен содержать правильные значения по умолчанию" time="0.0002010419">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; defaultTwoFactorConfig &gt; должен содержать правильные значения по умолчанию" time="0.000179875">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; defaultAuthConfig &gt; должен содержать правильные значения по умолчанию" time="0.000159125">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен объединять пользовательскую конфигурацию с конфигурацией по умолчанию" time="0.000270583">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен объединять заголовки API" time="0.000085375">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен объединять конфигурацию хранения токенов" time="0.0000734169">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен объединять конфигурацию двухфакторной аутентификации" time="0.0000751669">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен добавлять конфигурацию Telegram аутентификации" time="0.000144666">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен использовать значения по умолчанию для пустой конфигурации" time="0.000245542">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен обрабатывать частичную конфигурацию API" time="0.000095583">
+        </testcase>
+        <testcase classname="test/config/auth-config.test.ts" name="auth-config &gt; mergeConfig &gt; должен обрабатывать пустые заголовки API" time="0.0000640841">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/utils/error-handling.test.ts" timestamp="2025-09-05T16:59:04.948Z" hostname="MacBook-Pro-Maksim.local" tests="35" failures="0" errors="0" skipped="0" time="0.0094905421">
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; Error Classes &gt; should create AuthError with correct properties" time="0.001954792">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; Error Classes &gt; should create AuthError with default type when not specified" time="0.0001805">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; Error Classes &gt; should create UserError with correct properties" time="0.0004255">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; Error Classes &gt; should create TwoFactorError with correct properties" time="0.000228">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 400 error" time="0.0001300831">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 400 error with default message" time="0.000140666">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 401 error" time="0.0000839161">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 403 error" time="0.0008895">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 404 error" time="0.0002182089">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 422 error" time="0.0001905">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 429 error" time="0.000077083">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle HTTP 500 error" time="0.000074417">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle other HTTP status codes" time="0.000067875">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle network errors" time="0.000273417">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle other errors" time="0.0000849581">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleHttpError &gt; should handle errors without message" time="0.000120458">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should return AuthError if already an instance" time="0.000096334">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 400 error" time="0.000077708">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 401 error with email_not_verified reason" time="0.000076084">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 401 error with two_factor_required reason" time="0.000403708">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 401 error with default reason" time="0.000080583">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 403 error" time="0.000070333">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 429 error" time="0.000070667">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle HTTP 500 error" time="0.0000654581">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle network errors" time="0.000154">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; handleAuthError &gt; should handle other errors" time="0.000075">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize AuthError in Russian" time="0.0000910411">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize AuthError in English" time="0.000047125">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize UserError in Russian" time="0.000068167">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize UserError in English" time="0.000043833">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize TwoFactorError in Russian" time="0.000079792">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should localize TwoFactorError in English" time="0.000051125">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should return original message for regular Error" time="0.0000461251">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should use Russian as default locale" time="0.000044208">
+        </testcase>
+        <testcase classname="test/utils/error-handling.test.ts" name="Error Handling Utils &gt; localizeError &gt; should return original message for unknown error types" time="0.000046291">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/utils/permissions.test.ts" timestamp="2025-09-05T16:59:04.951Z" hostname="MacBook-Pro-Maksim.local" tests="14" failures="0" errors="0" skipped="0" time="0.003539292">
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasPermission &gt; должен возвращать true, если у пользователя есть право" time="0.0007350831">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasPermission &gt; должен возвращать false, если у пользователя нет права" time="0.0001670001">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasPermission &gt; должен возвращать false, если у пользователя нет прав" time="0.000225042">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasPermission &gt; должен возвращать false для null пользователя" time="0.0001483331">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAnyPermission &gt; должен возвращать true, если у пользователя есть хотя бы одно из прав" time="0.0000991671">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAnyPermission &gt; должен возвращать false, если у пользователя нет ни одного из прав" time="0.0000597501">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAnyPermission &gt; должен возвращать false, если у пользователя нет прав" time="0.0000543331">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAnyPermission &gt; должен возвращать false для null пользователя" time="0.000048125">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAnyPermission &gt; должен возвращать false, если список запрашиваемых прав пуст" time="0.0001412499">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAllPermissions &gt; должен возвращать true, если у пользователя есть все права" time="0.0001479169">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAllPermissions &gt; должен возвращать false, если у пользователя нет хотя бы одного из прав" time="0.0000539169">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAllPermissions &gt; должен возвращать false, если у пользователя нет прав" time="0.0000446249">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAllPermissions &gt; должен возвращать false для null пользователя" time="0.000045791">
+        </testcase>
+        <testcase classname="test/utils/permissions.test.ts" name="Permissions Utils &gt; hasAllPermissions &gt; должен возвращать false, если список запрашиваемых прав пуст" time="0.000239041">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/utils/validation.test.ts" timestamp="2025-09-05T16:59:04.953Z" hostname="MacBook-Pro-Maksim.local" tests="31" failures="0" errors="0" skipped="0" time="0.007062166">
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidEmail &gt; should validate correct email addresses" time="0.0009301659">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidEmail &gt; should invalidate incorrect email addresses" time="0.0002846659">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidPassword &gt; should validate correct passwords" time="0.0003175831">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidPassword &gt; should invalidate incorrect passwords" time="0.000179958">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isNotEmpty &gt; should validate non-empty strings" time="0.000089208">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isNotEmpty &gt; should invalidate empty strings" time="0.000074667">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isDefined &gt; should validate defined values" time="0.000092208">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isDefined &gt; should invalidate undefined or null values" time="0.0000593749">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidUrl &gt; should validate correct URLs" time="0.001050375">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidUrl &gt; should invalidate incorrect URLs" time="0.000281958">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidPhone &gt; should validate correct phone numbers" time="0.0001117079">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidPhone &gt; should invalidate incorrect phone numbers" time="0.000090542">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; formatPhoneNumber &gt; should format phone numbers correctly" time="0.000137167">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; formatPhoneNumber &gt; should handle edge cases" time="0.000231416">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isInRange &gt; should validate numbers in range" time="0.000094458">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isInRange &gt; should invalidate numbers out of range" time="0.000115292">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isLengthValid &gt; should validate strings with correct length" time="0.000077459">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isLengthValid &gt; should invalidate strings with incorrect length" time="0.0000506251">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isEqual &gt; should validate equal values" time="0.0000656661">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isEqual &gt; should invalidate non-equal values" time="0.000060292">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidUsername &gt; should validate correct usernames" time="0.0000967499">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidUsername &gt; should invalidate incorrect usernames" time="0.0001464579">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidTelegramUsername &gt; should validate correct Telegram usernames" time="0.0001002499">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValidTelegramUsername &gt; should invalidate incorrect Telegram usernames" time="0.0001003751">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; formatTelegramUsername &gt; should format Telegram usernames correctly" time="0.000059875">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; formatTelegramUsername &gt; should handle edge cases" time="0.0000370419">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValid2FACode &gt; should validate correct 2FA codes" time="0.000058417">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; isValid2FACode &gt; should invalidate incorrect 2FA codes" time="0.000049208">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; validateObject &gt; should validate objects with valid fields" time="0.000354625">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; validateObject &gt; should invalidate objects with invalid fields" time="0.0001027499">
+        </testcase>
+        <testcase classname="test/utils/validation.test.ts" name="Validation Utils &gt; validateObject &gt; should handle custom validation rules" time="0.000079583">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/http/axios-http-client.test.ts" timestamp="2025-09-05T16:59:04.956Z" hostname="MacBook-Pro-Maksim.local" tests="14" failures="0" errors="0" skipped="0" time="0.010079875">
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен создавать экземпляр axios при инициализации" time="0.0022483749">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен выполнять GET запрос" time="0.001297083">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен выполнять POST запрос" time="0.000513">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен выполнять PUT запрос" time="0.000451208">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен выполнять PATCH запрос" time="0.000240458">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен выполнять DELETE запрос" time="0.000293625">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен устанавливать базовый URL" time="0.0001992919">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен устанавливать заголовок" time="0.000701125">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен устанавливать перехватчик ответов" time="0.0003325001">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен устанавливать перехватчик ошибок" time="0.0002041249">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен удалять заголовок" time="0.0002396669">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен передавать опции в GET запрос" time="0.000992167">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен вызывать перехватчик ответа при успехе" time="0.000380875">
+        </testcase>
+        <testcase classname="test/infrastructure/http/axios-http-client.test.ts" name="AxiosHttpClient &gt; должен вызывать перехватчик ошибок при ошибке" time="0.000822709">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/services/api-auth.service.test.ts" timestamp="2025-09-05T16:59:04.957Z" hostname="MacBook-Pro-Maksim.local" tests="18" failures="0" errors="0" skipped="0" time="0.012041875">
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; constructor &gt; должен настраивать базовый URL и перехватчик ошибок" time="0.002587042">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; error interceptor &gt; должен обновлять токен при ошибке 401" time="0.001002375">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; error interceptor &gt; должен выходить из системы, если нет refresh токена" time="0.000386291">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; error interceptor &gt; должен выходить из системы при ошибке обновления токена" time="0.0004802079">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; signIn &gt; должен успешно авторизовать пользователя" time="0.0004647499">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; signIn &gt; должен обрабатывать требование двухфакторной аутентификации" time="0.000302667">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; signIn &gt; должен обрабатывать ошибки авторизации" time="0.0002335">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; signUp &gt; должен успешно регистрировать пользователя" time="0.0004484581">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; signUp &gt; должен обрабатывать ошибки регистрации" time="0.0003039579">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; logout &gt; должен успешно выходить из системы с refresh токеном" time="0.000823583">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; logout &gt; должен очищать токены даже при ошибке API" time="0.0002994161">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; logout &gt; должен очищать токены без API вызова, если нет refresh токена" time="0.0002229171">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; isAuthenticated &gt; должен возвращать true для валидного токена" time="0.000194666">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; isAuthenticated &gt; должен возвращать false для истекшего токена" time="0.000351125">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; isAuthenticated &gt; должен возвращать false при отсутствии токена" time="0.000186542">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; refreshToken &gt; должен обновлять токены" time="0.000559833">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; requestPasswordReset &gt; должен отправлять запрос на сброс пароля" time="0.000276125">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-auth.service.test.ts" name="ApiAuthService &gt; resetPassword &gt; должен сбрасывать пароль" time="0.0002533339">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/services/api-telegram-auth.service.test.ts" timestamp="2025-09-05T16:59:04.958Z" hostname="MacBook-Pro-Maksim.local" tests="10" failures="0" errors="0" skipped="0" time="0.013663375">
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; initSignIn &gt; должен успешно инициализировать вход и возвращать данные" time="0.002915458">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; initSignIn &gt; должен возвращать только URL, если API-вызов не удался" time="0.0018716249">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; handleAuthResult &gt; должен успешно обрабатывать данные и сохранять токены" time="0.002427416">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; handleAuthResult &gt; должен возвращать ошибку при невалидных данных" time="0.000823917">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; handleAuthResult &gt; должен обрабатывать требование 2FA" time="0.001733833">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; validateTelegramData &gt; должен возвращать true для валидных данных" time="0.000508167">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; validateTelegramData &gt; должен возвращать false для данных с истекшим сроком" time="0.000177209">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; confirmAuth &gt; должен успешно подтверждать аутентификацию" time="0.0005957921">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; confirmAuth &gt; должен возвращать ошибку, если ID не предоставлен" time="0.000293334">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-telegram-auth.service.test.ts" name="ApiTelegramAuthService &gt; confirmAuth &gt; должен обрабатывать отмену запроса" time="0.0002568331">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/services/api-two-factor.service.test.ts" timestamp="2025-09-05T16:59:04.959Z" hostname="MacBook-Pro-Maksim.local" tests="9" failures="0" errors="0" skipped="0" time="0.0084881251">
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; constructor &gt; должен настраивать базовый URL" time="0.001905">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; должен успешно верифицировать код" time="0.0012505">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; должен обрабатывать ошибки верификации" time="0.0004925001">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; должен обрабатывать неизвестные ошибки" time="0.0002350409">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; sendCode &gt; должен отправлять код" time="0.000410666">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; getAvailableMethods &gt; должен получать доступные методы" time="0.000527459">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; setupMethod &gt; должен настраивать метод" time="0.0011507081">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; confirmMethodSetup &gt; должен подтверждать настройку метода" time="0.000811">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-two-factor.service.test.ts" name="ApiTwoFactorService &gt; disableMethod &gt; должен отключать метод" time="0.000367167">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/services/api-user.service.test.ts" timestamp="2025-09-05T16:59:04.959Z" hostname="MacBook-Pro-Maksim.local" tests="12" failures="0" errors="0" skipped="0" time="0.009527125">
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; constructor &gt; должен настраивать базовый URL" time="0.00321325">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; должен возвращать null при отсутствии токена" time="0.0007601659">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; должен возвращать null при истекшем токене" time="0.0003330001">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; должен возвращать кешированного пользователя" time="0.0003983331">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; должен возвращать null при ошибке API" time="0.001054958">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; updateProfile &gt; должен обновлять профиль пользователя" time="0.0004432501">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; updateProfile &gt; должен обновлять кешированного пользователя" time="0.000343708">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; changePassword &gt; должен изменять пароль" time="0.000290084">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; requestEmailChange &gt; должен запрашивать смену email" time="0.0003618751">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; confirmEmailChange &gt; должен подтверждать смену email и очищать кеш" time="0.000400625">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; requestEmailVerification &gt; должен запрашивать верификацию email" time="0.000183041">
+        </testcase>
+        <testcase classname="test/infrastructure/services/api-user.service.test.ts" name="ApiUserService &gt; verifyEmail &gt; должен верифицировать email и очищать кеш" time="0.000308459">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/services/fingerprint.service.test.ts" timestamp="2025-09-05T16:59:04.960Z" hostname="MacBook-Pro-Maksim.local" tests="5" failures="0" errors="0" skipped="0" time="0.017051958">
+        <testcase classname="test/infrastructure/services/fingerprint.service.test.ts" name="FingerprintJsService &gt; должен получать fingerprint и кэшировать его в sessionStorage" time="0.0057322921">
+        </testcase>
+        <testcase classname="test/infrastructure/services/fingerprint.service.test.ts" name="FingerprintJsService &gt; должен возвращать fingerprint из кэша sessionStorage" time="0.000654083">
+        </testcase>
+        <testcase classname="test/infrastructure/services/fingerprint.service.test.ts" name="FingerprintJsService &gt; должен получать полные данные о посетителе" time="0.0067156249">
+        </testcase>
+        <testcase classname="test/infrastructure/services/fingerprint.service.test.ts" name="FingerprintJsService &gt; должен отправлять fingerprint на сервер" time="0.001102375">
+        </testcase>
+        <testcase classname="test/infrastructure/services/fingerprint.service.test.ts" name="FingerprintJsService &gt; должен возвращать fpId, если адаптер API не предоставлен" time="0.0002813751">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/storage/cookie-token-storage.test.ts" timestamp="2025-09-05T16:59:04.961Z" hostname="MacBook-Pro-Maksim.local" tests="6" failures="0" errors="0" skipped="0" time="0.0078877081">
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен сохранять токены в cookies" time="0.0049160839">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен получать токены из cookies" time="0.000796416">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен возвращать null, если токены не найдены" time="0.0002998329">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен удалять токены из cookies" time="0.00024225">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен проверять наличие токена доступа" time="0.0002689999">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/cookie-token-storage.test.ts" name="CookieTokenStorage &gt; должен возвращать null, если токен отсутствует" time="0.000188709">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/infrastructure/storage/local-storage-token-storage.test.ts" timestamp="2025-09-05T16:59:04.961Z" hostname="MacBook-Pro-Maksim.local" tests="6" failures="0" errors="0" skipped="0" time="0.003329375">
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен сохранять токены в localStorage" time="0.0009061669">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен получать токены из localStorage" time="0.0006959159">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен возвращать null, если токены не найдены" time="0.000296167">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен очищать токены из localStorage" time="0.0001964591">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен корректно проверять истечение токена" time="0.000136042">
+        </testcase>
+        <testcase classname="test/infrastructure/storage/local-storage-token-storage.test.ts" name="LocalStorageTokenStorage &gt; должен считать токен истекшим, если нет данных о сроке действия" time="0.000066166">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/domain/services/auth.service.test.ts" timestamp="2025-09-05T16:59:04.962Z" hostname="MacBook-Pro-Maksim.local" tests="16" failures="0" errors="0" skipped="0" time="0.0071036661">
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; signIn &gt; should successfully sign in with valid credentials" time="0.001977917">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; signIn &gt; should handle failed sign in with invalid credentials" time="0.000547334">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; signIn &gt; should handle two-factor authentication requirement" time="0.000390709">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; signUp &gt; should successfully register a new user" time="0.000395375">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; signUp &gt; should handle registration failure" time="0.0001987081">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; refreshToken &gt; should successfully refresh the token" time="0.0003182081">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; refreshToken &gt; should handle token refresh failure" time="0.000644583">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; logout &gt; should successfully log out the user" time="0.0001908751">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; logout &gt; should clear tokens even if API call fails" time="0.000192875">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; isAuthenticated &gt; should return true when user has valid token" time="0.0001524169">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; isAuthenticated &gt; should return false when user has no token" time="0.000071167">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; isAuthenticated &gt; should return false when token is expired" time="0.0000662911">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; requestPasswordReset &gt; should successfully request password reset" time="0.0001904171">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; requestPasswordReset &gt; should handle password reset request failure" time="0.0003297499">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; resetPassword &gt; should successfully reset password" time="0.00020625">
+        </testcase>
+        <testcase classname="test/domain/services/auth.service.test.ts" name="AuthService &gt; resetPassword &gt; should handle password reset failure" time="0.000128">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/domain/services/telegram-auth.test.ts" timestamp="2025-09-05T16:59:04.964Z" hostname="MacBook-Pro-Maksim.local" tests="25" failures="0" errors="0" skipped="0" time="0.0375126671">
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initSignIn &gt; должен инициализировать вход через Telegram с базовыми параметрами" time="0.0133387079">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initSignIn &gt; должен использовать конфигурацию по умолчанию" time="0.0008638331">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initSignIn &gt; должен обрабатывать дополнительные параметры" time="0.000668208">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initSignIn &gt; должен обрабатывать ошибки API и возвращать только URL" time="0.0034791249">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initSignIn &gt; должен пробрасывать общие ошибки при создании URL" time="0.002888083">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; handleAuthResult &gt; должен обрабатывать валидные данные аутентификации" time="0.00059875">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; handleAuthResult &gt; должен обрабатывать невалидные данные" time="0.0003339159">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; handleAuthResult &gt; должен обрабатывать ошибки API" time="0.000247375">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; handleAuthResult &gt; должен обрабатывать общие ошибки" time="0.000452709">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; validateTelegramData &gt; должен валидировать корректные данные" time="0.0002828751">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; validateTelegramData &gt; должен отклонять данные с отсутствующими полями" time="0.000311625">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; validateTelegramData &gt; должен отклонять устаревшие данные" time="0.000636667">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; validateTelegramData &gt; должен обрабатывать ошибки валидации" time="0.001732583">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initialize &gt; должен инициализировать адаптер" time="0.000685791">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; initialize &gt; должен обрабатывать ошибки инициализации" time="0.00057275">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; createLoginWidget &gt; должен создавать виджет входа" time="0.0006247081">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; createLoginWidget &gt; должен обрабатывать ошибки создания виджета" time="0.0003486251">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; authenticateWithWidget &gt; должен аутентифицировать через виджет" time="0.0004159579">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; authenticateWithWidget &gt; должен обрабатывать неуспешную аутентификацию адаптера" time="0.000314625">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; authenticateWithWidget &gt; должен обрабатывать ошибки API" time="0.000251125">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; confirmAuth &gt; должен подтверждать аутентификацию" time="0.000457917">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; confirmAuth &gt; должен обрабатывать дополнительные параметры" time="0.00030475">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; confirmAuth &gt; должен обрабатывать отсутствующий ID" time="0.000240333">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; confirmAuth &gt; должен обрабатывать прерванные запросы" time="0.004837875">
+        </testcase>
+        <testcase classname="test/domain/services/telegram-auth.test.ts" name="TelegramAuth &gt; confirmAuth &gt; должен обрабатывать ошибки API" time="0.000837708">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/domain/services/two-factor.service.test.ts" timestamp="2025-09-05T16:59:04.966Z" hostname="MacBook-Pro-Maksim.local" tests="13" failures="0" errors="0" skipped="0" time="0.010690667">
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; should verify 2FA code successfully and save tokens" time="0.002663125">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; should handle verification failure" time="0.0009302499">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; verifyCode &gt; should handle verification failure with default error message" time="0.000439042">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; sendCode &gt; should send 2FA code successfully" time="0.000349625">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; sendCode &gt; should throw error if sending code fails" time="0.00102425">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; getAvailableMethods &gt; should return available 2FA methods" time="0.000310333">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; getAvailableMethods &gt; should throw error if fetching methods fails" time="0.0003947079">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; setupMethod &gt; should setup 2FA method successfully" time="0.001248875">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; setupMethod &gt; should throw error if setup fails" time="0.000672542">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; confirmMethodSetup &gt; should confirm 2FA method setup successfully" time="0.000406">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; confirmMethodSetup &gt; should throw error if confirmation fails" time="0.00041875">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; disableMethod &gt; should disable 2FA method successfully" time="0.000310333">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.service.test.ts" name="ApiTwoFactorService &gt; disableMethod &gt; should throw error if disabling method fails" time="0.0003334581">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/domain/services/two-factor.test.ts" timestamp="2025-09-05T16:59:04.967Z" hostname="MacBook-Pro-Maksim.local" tests="12" failures="0" errors="0" skipped="0" time="0.010081583">
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; initialize &gt; должен успешно инициализироваться с Telegram адаптером" time="0.001916958">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; initialize &gt; должен обрабатывать ошибку инициализации Telegram адаптера" time="0.001250291">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; verifyCode &gt; должен вызывать API для стандартных методов" time="0.001373917">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; verifyCode &gt; должен использовать Telegram адаптер для Telegram метода" time="0.000509042">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; verifyCode &gt; должен обрабатывать ошибку от Telegram адаптера" time="0.0002676671">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; sendCode &gt; должен вызывать API для стандартных методов" time="0.000349166">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; sendCode &gt; должен использовать Telegram адаптер для Telegram метода" time="0.0013069589">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; getAvailableMethods &gt; должен получать доступные методы из API" time="0.0004315411">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; getAvailableMethods &gt; должен возвращать пустой массив при ошибке API" time="0.0004522079">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; setupMethod &gt; должен вызывать API для стандартных методов" time="0.000323">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; confirmMethodSetup &gt; должен вызывать API для стандартных методов" time="0.000304083">
+        </testcase>
+        <testcase classname="test/domain/services/two-factor.test.ts" name="TwoFactor Service &gt; disableMethod &gt; должен вызывать API для отключения метода" time="0.000245542">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/domain/services/user.service.test.ts" timestamp="2025-09-05T16:59:04.968Z" hostname="MacBook-Pro-Maksim.local" tests="18" failures="0" errors="0" skipped="0" time="0.012465333">
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; should return null if no access token" time="0.003129334">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; should return null if access token is expired" time="0.000566709">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; should fetch user profile if token is valid" time="0.0010517499">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; should return cached user profile on subsequent calls" time="0.0003718331">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; getCurrentUser &gt; should return null if API call fails" time="0.0004842499">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; updateProfile &gt; should update user profile and return updated profile" time="0.000551125">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; updateProfile &gt; should update cached user profile after successful update" time="0.000253958">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; updateProfile &gt; should throw error if update fails" time="0.0009323341">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; changePassword &gt; should call API to change password" time="0.000403625">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; changePassword &gt; should throw error if password change fails" time="0.00044525">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; requestEmailChange &gt; should call API to request email change" time="0.0003232089">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; requestEmailChange &gt; should throw error if email change request fails" time="0.000294083">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; confirmEmailChange &gt; should call API to confirm email change and clear cached user" time="0.0004584579">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; confirmEmailChange &gt; should throw error if email change confirmation fails" time="0.000473125">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; requestEmailVerification &gt; should call API to request email verification" time="0.000291417">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; requestEmailVerification &gt; should throw error if email verification request fails" time="0.0004326249">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; verifyEmail &gt; should call API to verify email and clear cached user" time="0.000307584">
+        </testcase>
+        <testcase classname="test/domain/services/user.service.test.ts" name="ApiUserService &gt; verifyEmail &gt; should throw error if email verification fails" time="0.0003200841">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/store/auth-store.test.ts" timestamp="2025-09-05T16:59:04.969Z" hostname="MacBook-Pro-Maksim.local" tests="7" failures="0" errors="0" skipped="0" time="0.0114029169">
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; должен инициализироваться с начальным состоянием" time="0.001082333">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; setLoading &gt; должен устанавливать isLoading в true и сбрасывать ошибку" time="0.000834125">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; setLoading &gt; должен устанавливать isLoading в false, не изменяя ошибку" time="0.0048585">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; setAuthenticated &gt; должен устанавливать isAuthenticated и токены" time="0.0025502919">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; setAuthenticated &gt; должен сбрасывать isAuthenticated и токены при выходе" time="0.000331625">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; setError &gt; должен устанавливать ошибку и сбрасывать isLoading" time="0.000210083">
+        </testcase>
+        <testcase classname="test/adapters/store/auth-store.test.ts" name="AuthStore &gt; reset &gt; должен сбрасывать состояние к начальному" time="0.000406708">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/store/simple-store.test.ts" timestamp="2025-09-05T16:59:04.970Z" hostname="MacBook-Pro-Maksim.local" tests="7" failures="0" errors="0" skipped="0" time="0.0044399999">
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен создавать хранилище с начальным состоянием" time="0.0010275409">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен обновлять состояние с помощью объекта" time="0.0001995">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен обновлять состояние с помощью функции" time="0.0002364171">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен уведомлять подписчиков при изменении состояния" time="0.0012155421">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен отписывать подписчиков" time="0.000273084">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; должен уведомлять нескольких подписчиков" time="0.0002752501">
+        </testcase>
+        <testcase classname="test/adapters/store/simple-store.test.ts" name="SimpleStore &gt; не должен уведомлять подписчиков, если состояние не изменилось" time="0.0001064581">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/telegram/telegram-auth.adapter.test.ts" timestamp="2025-09-05T16:59:04.971Z" hostname="MacBook-Pro-Maksim.local" tests="5" failures="0" errors="0" skipped="0" time="0.021355">
+        <testcase classname="test/adapters/telegram/telegram-auth.adapter.test.ts" name="TelegramAuthAdapter &gt; должен создавать экземпляр с правильной конфигурацией" time="0.002187125">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-auth.adapter.test.ts" name="TelegramAuthAdapter &gt; должен инициализировать скрипт Telegram" time="0.009845917">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-auth.adapter.test.ts" name="TelegramAuthAdapter &gt; должен создавать виджет входа" time="0.006398208">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-auth.adapter.test.ts" name="TelegramAuthAdapter &gt; должен обрабатывать аутентификацию и проверять данные" time="0.001289042">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-auth.adapter.test.ts" name="TelegramAuthAdapter &gt; должен отклонять устаревшие данные аутентификации" time="0.0006968329">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/telegram/telegram-two-factor.adapter.test.ts" timestamp="2025-09-05T16:59:04.971Z" hostname="MacBook-Pro-Maksim.local" tests="10" failures="0" errors="0" skipped="0" time="0.0130701671">
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; initialize &gt; должен успешно инициализироваться" time="0.0034254999">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; initialize &gt; должен создавать контейнер для виджета, если он не существует" time="0.002318625">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; sendCode &gt; должен подготавливать виджет для telegram метода" time="0.0006418331">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; sendCode &gt; должен выбрасывать ошибку для неподдерживаемого типа метода" time="0.0008640829">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; verifyCode &gt; должен успешно верифицировать через authenticate" time="0.000561708">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; verifyCode &gt; должен обрабатывать ошибки аутентификации" time="0.0004115421">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; setupMethod &gt; должен настраивать метод и возвращать setupData" time="0.0003935421">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; confirmMethodSetup &gt; должен подтверждать настройку метода" time="0.000283334">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; confirmMethodSetup &gt; должен выбрасывать ошибку при неудачной аутентификации" time="0.001980625">
+        </testcase>
+        <testcase classname="test/adapters/telegram/telegram-two-factor.adapter.test.ts" name="TelegramTwoFactorAdapter &gt; disableMethod &gt; должен отключать метод без ошибок" time="0.000561667">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/adapters/backend-logger.adapter.test.ts" timestamp="2025-09-05T16:59:04.973Z" hostname="MacBook-Pro-Maksim.local" tests="5" failures="0" errors="0" skipped="0" time="0.00870875">
+        <testcase classname="test/logging/adapters/backend-logger.adapter.test.ts" name="BackendLoggerAdapter &gt; log &gt; должен отправлять событие в API" time="0.002257">
+        </testcase>
+        <testcase classname="test/logging/adapters/backend-logger.adapter.test.ts" name="BackendLoggerAdapter &gt; log &gt; должен обрабатывать ошибки API" time="0.0022746249">
+        </testcase>
+        <testcase classname="test/logging/adapters/backend-logger.adapter.test.ts" name="BackendLoggerAdapter &gt; batchLog &gt; должен отправлять несколько событий в API" time="0.002463541">
+        </testcase>
+        <testcase classname="test/logging/adapters/backend-logger.adapter.test.ts" name="BackendLoggerAdapter &gt; supports &gt; должен поддерживать все уровни, кроме DEBUG" time="0.00029825">
+        </testcase>
+        <testcase classname="test/logging/adapters/backend-logger.adapter.test.ts" name="BackendLoggerAdapter &gt; supports &gt; не должен поддерживать уровень DEBUG" time="0.0002961249">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/adapters/frontend-logger.adapter.test.ts" timestamp="2025-09-05T16:59:04.973Z" hostname="MacBook-Pro-Maksim.local" tests="8" failures="0" errors="0" skipped="0" time="0.005658583">
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; log &gt; должен логировать события в консоль" time="0.002363625">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; batchLog &gt; должен логировать несколько событий" time="0.0007605">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; supports &gt; должен всегда возвращать true" time="0.0003004171">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; synchronize &gt; должен вызывать колбэк с событиями" time="0.000336666">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; synchronize &gt; не должен вызывать колбэк, если нет событий" time="0.000209208">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; synchronize &gt; должен обрабатывать ошибки при синхронизации" time="0.0002955">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; getQueueSize &gt; должен возвращать размер очереди" time="0.0001799581">
+        </testcase>
+        <testcase classname="test/logging/adapters/frontend-logger.adapter.test.ts" name="FrontendLoggerAdapter &gt; clearQueue &gt; должен очищать очередь событий" time="0.000272792">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/adapters/metrika-logger-uuid.adapter.test.ts" timestamp="2025-09-05T16:59:04.974Z" hostname="MacBook-Pro-Maksim.local" tests="3" failures="0" errors="0" skipped="0" time="0.007166417">
+        <testcase classname="test/logging/adapters/metrika-logger-uuid.adapter.test.ts" name="MetrikaLoggerUuidAdapter &gt; log &gt; должен вызывать reachGoal с ID цели и fireAnalyticsEvent с UUID" time="0.004314792">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger-uuid.adapter.test.ts" name="MetrikaLoggerUuidAdapter &gt; log &gt; должен выводить предупреждение, если ID цели не найден" time="0.0009964169">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger-uuid.adapter.test.ts" name="MetrikaLoggerUuidAdapter &gt; trackEvent &gt; должен вызывать reachGoal и fireAnalyticsEvent с правильными параметрами" time="0.000914209">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/adapters/metrika-logger.adapter.test.ts" timestamp="2025-09-05T16:59:04.974Z" hostname="MacBook-Pro-Maksim.local" tests="9" failures="0" errors="0" skipped="0" time="0.0088155841">
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; log &gt; должен вызывать reachGoal и fireAnalyticsEvent для сопоставленного события" time="0.0036812919">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; log &gt; должен выводить предупреждение, если нет сопоставления для события" time="0.0007335">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; supports &gt; должен возвращать true для поддерживаемого события" time="0.000520708">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; supports &gt; должен возвращать false для уровня DEBUG" time="0.000368625">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; supports &gt; должен возвращать false для несопоставленного события" time="0.0003025">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; batchLog &gt; должен вызывать log для каждого события в пакете" time="0.0005295">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; trackEvent &gt; должен напрямую вызывать reachGoal и fireAnalyticsEvent" time="0.000637792">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; Event Queue &gt; должен обрабатывать очередь событий после debounce" time="0.0003025421">
+        </testcase>
+        <testcase classname="test/logging/adapters/metrika-logger.adapter.test.ts" name="MetrikaLoggerAdapter &gt; Event Queue &gt; должен обрабатывать ошибку при отправке событий" time="0.000785208">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/factories/analytics.factory.test.ts" timestamp="2025-09-05T16:59:04.975Z" hostname="MacBook-Pro-Maksim.local" tests="9" failures="0" errors="0" skipped="0" time="0.0098408329">
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; должен создавать LoggerService с FrontendLoggerAdapter по умолчанию" time="0.002518791">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; должен создавать MetrikaLoggerAdapter, если metrikaEnabled и есть metrikaId" time="0.0009985831">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; не должен создавать MetrikaLoggerAdapter, если metrikaId отсутствует" time="0.0005357499">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; не должен создавать MetrikaLoggerAdapter, если metrikaEnabled: false" time="0.000393792">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; должен создавать BackendLoggerAdapter, если apiLoggingEnabled и есть apiUrl" time="0.000630375">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; не должен создавать BackendLoggerAdapter, если apiUrl отсутствует" time="0.000432125">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; не должен создавать FrontendLoggerAdapter, если consoleLoggingEnabled: false" time="0.000372041">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; должен создавать все адаптеры при полной конфигурации" time="0.000804459">
+        </testcase>
+        <testcase classname="test/logging/factories/analytics.factory.test.ts" name="AnalyticsFactory &gt; должен возвращать LoggerService без адаптеров, если все отключено" time="0.000418208">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/react/logger-context.test.tsx" timestamp="2025-09-05T16:59:04.976Z" hostname="MacBook-Pro-Maksim.local" tests="5" failures="0" errors="0" skipped="0" time="0.1293982919">
+        <testcase classname="test/logging/react/logger-context.test.tsx" name="LoggerProvider and useLogger &gt; должен предоставлять logger и context через useLogger" time="0.021446542">
+        </testcase>
+        <testcase classname="test/logging/react/logger-context.test.tsx" name="LoggerProvider and useLogger &gt; должен вызывать ошибку, если useLogger используется вне провайдера" time="0.071667417">
+        </testcase>
+        <testcase classname="test/logging/react/logger-context.test.tsx" name="LoggerProvider and useLogger &gt; должен обновлять контекст через updateContext" time="0.024070084">
+        </testcase>
+        <testcase classname="test/logging/react/logger-context.test.tsx" name="LoggerProvider and useLogger &gt; должен вызывать соответствующие методы логирования" time="0.00506375">
+        </testcase>
+        <testcase classname="test/logging/react/logger-context.test.tsx" name="LoggerProvider and useLogger &gt; должен управлять состоянием включения/отключения логирования" time="0.0039790831">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/react/logger-hooks.test.tsx" timestamp="2025-09-05T16:59:04.977Z" hostname="MacBook-Pro-Maksim.local" tests="10" failures="0" errors="0" skipped="0" time="0.030719375">
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth с правильными параметрами для logLogin" time="0.0106042919">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth для logLogout" time="0.00475225">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth для logRegistration" time="0.001469292">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth для logPasswordReset" time="0.001109458">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth для logPasswordChange" time="0.0012367909">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useAuthLogger &gt; должен вызывать logAuth для log2FAUsage" time="0.001029708">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useSecurityLogger &gt; должен вызывать logger.log для logUnauthorizedAccess" time="0.00372575">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useSecurityLogger &gt; должен вызывать logger.log для logSuspiciousActivity" time="0.0014242921">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useSecurityLogger &gt; должен вызывать logger.log для logAccountLock" time="0.0018730409">
+        </testcase>
+        <testcase classname="test/logging/react/logger-hooks.test.tsx" name="Logger Hooks &gt; useComponentLogger &gt; должен логировать монтирование и размонтирование компонента" time="0.002035042">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/services/analytics-api.service.test.ts" timestamp="2025-09-05T16:59:04.978Z" hostname="MacBook-Pro-Maksim.local" tests="5" failures="0" errors="0" skipped="0" time="0.006565333">
+        <testcase classname="test/logging/services/analytics-api.service.test.ts" name="AnalyticsApiService &gt; должен отправлять одно событие" time="0.003294125">
+        </testcase>
+        <testcase classname="test/logging/services/analytics-api.service.test.ts" name="AnalyticsApiService &gt; должен отправлять массив событий" time="0.0004923329">
+        </testcase>
+        <testcase classname="test/logging/services/analytics-api.service.test.ts" name="AnalyticsApiService &gt; должен возвращать json при успешном ответе" time="0.0002955">
+        </testcase>
+        <testcase classname="test/logging/services/analytics-api.service.test.ts" name="AnalyticsApiService &gt; должен выбрасывать ошибку при неуспешном ответе API" time="0.000877459">
+        </testcase>
+        <testcase classname="test/logging/services/analytics-api.service.test.ts" name="AnalyticsApiService &gt; должен обрабатывать сетевые ошибки" time="0.0004423339">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/services/auth-logger.service.test.ts" timestamp="2025-09-05T16:59:04.978Z" hostname="MacBook-Pro-Maksim.local" tests="25" failures="0" errors="0" skipped="0" time="0.009707166">
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logLogin &gt; should log successful login" time="0.002081875">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logLogin &gt; should log failed login" time="0.000469292">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logLogout &gt; should log user logout" time="0.000658666">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logRegistration &gt; should log successful registration" time="0.000267292">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logRegistration &gt; should log failed registration" time="0.000335459">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordChange &gt; should log successful password change" time="0.000306917">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordChange &gt; should log failed password change" time="0.0001663339">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordResetRequest &gt; should log successful password reset request" time="0.000206666">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordResetRequest &gt; should log failed password reset request" time="0.000326166">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordResetConfirm &gt; should log successful password reset confirmation" time="0.000267542">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logPasswordResetConfirm &gt; should log failed password reset confirmation" time="0.0001481249">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logEnable2FA &gt; should log successful 2FA enable" time="0.000153541">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logEnable2FA &gt; should log failed 2FA enable" time="0.0001301659">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logDisable2FA &gt; should log successful 2FA disable" time="0.000371667">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logDisable2FA &gt; should log failed 2FA disable" time="0.00014325">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logVerify2FACode &gt; should log successful 2FA code verification" time="0.0001975">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logVerify2FACode &gt; should log failed 2FA code verification" time="0.0001332921">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logSuspiciousActivity &gt; should log suspicious activity" time="0.0001361251">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logSystemEvent &gt; should log system event with INFO level" time="0.000158167">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logSystemEvent &gt; should log system event with CRITICAL level" time="0.000333125">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logSystemEvent &gt; should log system event with DEBUG level" time="0.0001370419">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logAccountLock &gt; should log account lock" time="0.000160917">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logAccountUnlock &gt; should log account unlock" time="0.000134959">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logEmailVerification &gt; should log successful email verification" time="0.00013025">
+        </testcase>
+        <testcase classname="test/logging/services/auth-logger.service.test.ts" name="AuthLoggerService &gt; logEmailVerification &gt; should log failed email verification" time="0.00018425">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/services/fingerprint-logger.service.test.ts" timestamp="2025-09-05T16:59:04.981Z" hostname="MacBook-Pro-Maksim.local" tests="12" failures="0" errors="0" skipped="0" time="0.008389625">
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; constructor &gt; should initialize with default options" time="0.001606125">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; constructor &gt; should initialize with custom options" time="0.0005773751">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; getFingerprint &gt; should get fingerprint from service and cache it" time="0.0004630001">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; getFingerprint &gt; should handle errors when getting fingerprint" time="0.0009474161">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; getFingerprint &gt; should reset fingerprint cache when requested" time="0.0002763751">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; enrichContextWithFingerprint &gt; should add fingerprint to context when enabled" time="0.0009910411">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; enrichContextWithFingerprint &gt; should not add fingerprint to context when disabled" time="0.000507041">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; enrichContextWithFingerprint &gt; should handle errors when enriching context" time="0.000627666">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; log &gt; should enrich context and call parent log method" time="0.000411834">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; batchLog &gt; should enrich context and call parent batchLog method" time="0.000458917">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; updateOptions &gt; should update fingerprint options" time="0.0001544169">
+        </testcase>
+        <testcase classname="test/logging/services/fingerprint-logger.service.test.ts" name="FingerprintLoggerService &gt; resetFingerprintCache &gt; should reset cached fingerprint" time="0.000202916">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/logging/services/logger.service.test.ts" timestamp="2025-09-05T16:59:04.982Z" hostname="MacBook-Pro-Maksim.local" tests="11" failures="0" errors="0" skipped="0" time="0.0086105421">
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; log &gt; должен вызывать log у всех поддерживающих адаптеров" time="0.0029187081">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; log &gt; не должен логировать, если уровень события ниже минимального" time="0.000733125">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; log &gt; не должен логировать, если логирование отключено (кроме CRITICAL)" time="0.000461917">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; log &gt; должен добавлять timestamp и source, если они отсутствуют" time="0.001350291">
+            <system-err>
+LogEvent missing required field: source
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; log &gt; должен обрабатывать ошибки в адаптерах" time="0.0004389161">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; batchLog &gt; должен вызывать batchLog, если он поддерживается" time="0.00029375">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; batchLog &gt; должен вызывать log для каждого события, если batchLog не поддерживается" time="0.0003684591">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; batchLog &gt; должен фильтровать события по уровню" time="0.00041975">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; batchLog &gt; не должен вызывать адаптеры, если все события отфильтрованы" time="0.0002420831">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; Options &gt; должен обновлять опции через updateOptions" time="0.0001759579">
+        </testcase>
+        <testcase classname="test/logging/services/logger.service.test.ts" name="LoggerService &gt; Options &gt; должен обновлять контекст по умолчанию" time="0.000301125">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/api/fingerprint/api.test.ts" timestamp="2025-09-05T16:59:04.983Z" hostname="MacBook-Pro-Maksim.local" tests="6" failures="0" errors="0" skipped="0" time="0.007801625">
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; constructor &gt; should use default paths when not provided" time="0.0024735839">
+        </testcase>
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; constructor &gt; should use custom paths when provided" time="0.000585709">
+        </testcase>
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; sendFingerprint &gt; should send fingerprint data and return response" time="0.000692541">
+        </testcase>
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; sendFingerprint &gt; should throw error if API call fails" time="0.0012836249">
+        </testcase>
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; setSessionHeader &gt; should set X-Session header when sessionId is provided" time="0.0003785831">
+        </testcase>
+        <testcase classname="test/adapters/api/fingerprint/api.test.ts" name="FingerprintApiAdapter &gt; setSessionHeader &gt; should delete X-Session header when sessionId is null" time="0.000249833">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/hooks/use-auth.test.tsx" timestamp="2025-09-05T16:59:04.984Z" hostname="MacBook-Pro-Maksim.local" tests="13" failures="0" errors="0" skipped="0" time="0.061414667">
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен возвращать состояние аутентификации из хранилища" time="0.012609375">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен вызывать signIn из сервиса и обновлять состояние" time="0.004808375">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать ошибки при входе" time="0.0016476671">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен вызывать logout из сервиса и обновлять состояние" time="0.001713792">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен вызывать signUp из сервиса и обновлять состояние" time="0.0037943751">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен вызывать requestPasswordReset из сервиса" time="0.001799209">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать ошибки при запросе сброса пароля" time="0.005283334">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен вызывать resetPassword из сервиса" time="0.001124542">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать ошибки при сбросе пароля" time="0.0013997921">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать ошибки при регистрации" time="0.009955417">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать исключения при входе" time="0.001895959">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать исключения при регистрации" time="0.005389333">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-auth.test.tsx" name="useAuth &gt; должен обрабатывать ошибки при выходе" time="0.008468583">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/hooks/use-permissions.test.tsx" timestamp="2025-09-05T16:59:04.986Z" hostname="MacBook-Pro-Maksim.local" tests="6" failures="0" errors="0" skipped="0" time="0.017254709">
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен проверять наличие одного права у пользователя" time="0.01008175">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен проверять наличие любого из прав у пользователя" time="0.0015577919">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен проверять наличие всех прав у пользователя" time="0.001156333">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен возвращать список прав пользователя" time="0.001183375">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен возвращать пустой массив прав, если пользователь не авторизован" time="0.001032375">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-permissions.test.tsx" name="usePermissions &gt; должен корректно работать без логгера" time="0.0013486251">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/hooks/use-store.test.tsx" timestamp="2025-09-05T16:59:04.986Z" hostname="MacBook-Pro-Maksim.local" tests="3" failures="0" errors="0" skipped="0" time="0.0147110831">
+        <testcase classname="test/adapters/react/hooks/use-store.test.tsx" name="useStore &gt; должен возвращать текущее состояние хранилища" time="0.007752708">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-store.test.tsx" name="useStore &gt; должен обновлять состояние при изменении хранилища" time="0.003535334">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-store.test.tsx" name="useStore &gt; должен отписываться от хранилища при размонтировании" time="0.002088292">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/hooks/use-telegram-auth.test.tsx" timestamp="2025-09-05T16:59:04.986Z" hostname="MacBook-Pro-Maksim.local" tests="1" failures="0" errors="0" skipped="0" time="0.013799041">
+        <testcase classname="test/adapters/react/hooks/use-telegram-auth.test.tsx" name="useTelegramAuth simplified tests &gt; should call initSignIn and update state correctly" time="0.0129750839">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/hooks/use-two-factor.test.tsx" timestamp="2025-09-05T16:59:04.987Z" hostname="MacBook-Pro-Maksim.local" tests="12" failures="0" errors="0" skipped="0" time="0.1143514171">
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен возвращать начальное состояние" time="0.0100755839">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен устанавливать двухфакторную аутентификацию как обязательную" time="0.002489959">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен выбирать метод аутентификации" time="0.0045810831">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен проверять код и возвращать успешный результат" time="0.0044835">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен возвращать ошибку при проверке кода без выбранного метода" time="0.001473958">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен отправлять код" time="0.0048668749">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен обрабатывать ошибку при отправке кода" time="0.0135573751">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен получать доступные методы" time="0.059698458">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен настраивать метод" time="0.0023238751">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен подтверждать настройку метода" time="0.001867833">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен отключать метод" time="0.0049955">
+        </testcase>
+        <testcase classname="test/adapters/react/hooks/use-two-factor.test.tsx" name="useTwoFactor &gt; должен сбрасывать состояние" time="0.002193666">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/adapters/react/providers/auth-provider.test.tsx" timestamp="2025-09-05T16:59:04.987Z" hostname="MacBook-Pro-Maksim.local" tests="6" failures="0" errors="0" skipped="0" time="0.1034717079">
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен рендерить дочерние компоненты" time="0.017135417">
+        </testcase>
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен вызывать onInit при монтировании, если он предоставлен" time="0.006171">
+        </testcase>
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен проверять статус аутентификации при монтировании, если onInit не предоставлен" time="0.0060467091">
+        </testcase>
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен устанавливать статус аутентификации в хранилище" time="0.011424625">
+        </testcase>
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен обрабатывать ошибки при проверке статуса аутентификации" time="0.006433">
+        </testcase>
+        <testcase classname="test/adapters/react/providers/auth-provider.test.tsx" name="AuthProvider &gt; должен обрабатывать ошибки в onInit" time="0.055309167">
+        </testcase>
+    </testsuite>
+</testsuites>
